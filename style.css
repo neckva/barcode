@@ -1,0 +1,31 @@
+body{
+    display: grid;
+  
+    width: 21cm;
+    height: 29.7cm;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    overflow: hidden;
+  }
+  
+  body>section{
+    border: 1px dashed;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center 
+  }
+  
+  .infoCarte{
+    width: 100%;
+    padding:0.2cm;
+    table-layout: fixed;
+  }
+  
+  .infoCarte tr{
+    height: 0.75cm;
+  }
+  
+  .infoCarte td:last-of-type{
+    background: lightgrey;
+  }
