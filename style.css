@@ -1,31 +1,50 @@
 body{
-    display: grid;
+  display: grid;
+
+  width: 21cm;
+  height: 29.7cm;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 8.5cm);
+  overflow: hidden;
+}
+
+h1{
+color: white;
+text-shadow: 2px 2px 0px black;
+ 
+}
+
+body>section{
+  border: 1px dashed;   
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center ;
+
+  background-repeat: no-repeat;
+  background-position: 1cm 0.6cm;
+  background-size: 3.3cm;
   
-    width: 21cm;
-    height: 29.7cm;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    overflow: hidden;
-  }
-  
-  body>section{
-    border: 1px dashed;   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items:center 
-  }
-  
-  .infoCarte{
-    width: 100%;
-    padding:0.2cm;
-    table-layout: fixed;
-  }
-  
-  .infoCarte tr{
-    height: 0.75cm;
-  }
-  
-  .infoCarte td:last-of-type{
-    background: lightgrey;
-  }
+  overflow: hidden;
+  /*background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,1)),
+                     url(logo.webp);
+  background-blend-mode: overlay;
+  -webkit-filter: saturate(0%);
+     -moz-filter: saturate(0%);
+       -o-filter: saturate(0%);
+          filter: saturate(0%);*/
+}
+
+.infoCarte{
+  width: 100%;
+  padding:0.2cm;
+  table-layout: fixed;
+}
+
+.infoCarte tr{
+  height: 0.75cm;
+}
+
+.infoCarte td:last-of-type{
+  background: lightgrey;
+}

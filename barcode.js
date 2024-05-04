@@ -11,7 +11,7 @@ function genererCarteCode() {
     var section = document.createElement('section');
     section.className = 'carte';
     var h1 = document.createElement('h1');
-    h1.textContent = 'Le Zinc 🍫';
+    h1.textContent = 'Conso 🍫';
     var barcodeDiv = document.createElement('div');
     barcodeDiv.className = 'barcode';
     var table = document.createElement('table');
@@ -39,8 +39,8 @@ function genererCarteCode() {
     acode.code = Math.random().toString(36).substr(2, 7);
     acode.type = 'CODE128';
     acode.withtext = true;
-    acode.xsize = 1;
-    acode.ysize = 50;
+    acode.xsize = 1.4;
+    acode.ysize = 100;
     acode.xratio = 3.0;
     acode.xinter = 1;
     barcodeDiv.innerHTML= acode.draw();
